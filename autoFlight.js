@@ -6,6 +6,7 @@ var arDrone = require('ar-drone');
 var client = arDrone.createClient();
 
 exports.autoFlight = function(){
+    console.log("taking off");
     client.takeoff();
 
     client

@@ -5,5 +5,7 @@
 
 var arDrone = require('ar-drone');
 var client = arDrone.createClient();
+var af = require('./autoFlight.js')
 
-client.createRepl();
+//client.createRepl();
+af.autoFlight();
